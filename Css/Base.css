@@ -259,10 +259,10 @@ ul {
 @media (min-width: 1440px) {
     :root {
 
-        --font-small: 1.12rem;
-        --font-medium: 1.4rem;
-        --font-large: 1.96rem;
-        --font-xl: 2.8rem;
+        --font-small: 1.3rem;
+        --font-medium: 1.6rem;
+        --font-large: 2rem;
+        --font-xl: 3rem;
 
 
         --padding-sm: 0.725rem;
