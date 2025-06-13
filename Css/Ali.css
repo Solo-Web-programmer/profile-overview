@@ -1,0 +1,235 @@
+header {
+    height: 120vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, var(--bg-dark) 90%),
+        url(/Image/mobilePosterDarkMood.webp);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.light_mode header{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, var(--bg-dark) 90%),
+        url(/Image/mobilePosterLightMood.webp);
+            background-size: cover;
+}
+
+
+.namebox img {
+    width: var(--photo-size);
+    border-radius: 50%;
+    border: calc(var(--border-radius) * 0.1) solid var(--border-highlight);
+    outline: calc(var(--border-radius) * 0.2) solid var(--border-highlight);
+    outline-offset: calc(var(--border-radius) * 0.2);
+    box-shadow: 0 0px 20px var(--shadow-color);
+}
+
+.namebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.namebox h1 {
+    padding: var(--padding-md) 0 var(--padding-sm);
+    font-size: var(--font-xl);
+    z-index: 1;
+}
+
+
+.namebox .name {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    overflow-x: clip;
+    overflow-y: visible;
+}
+
+
+.namebox .shadow {
+    position: absolute;
+    bottom: 0;
+    font-size: var(--font-large);
+    font-weight: bold;
+    transform: scale(2.5);
+    opacity: 0.1;
+    z-index: 0;
+}
+
+
+.MyInterest {
+    background-color: var(--accent);
+    border-radius: calc(var(--border-radius) * 5);
+    padding: var(--padding-sm) var(--padding-md);
+    z-index: 1;
+    font-size: var(--font-small);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 0 20px var(--accent);
+    opacity: 0.9;
+}
+
+.light_mode .MyInterest {
+    color: #f0f8ff;
+}
+.settings {
+    font-size: var(--font-large);
+    color: var(--text-color);
+    padding: var(--padding-md);
+}
+
+
+.settings a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--button-height);
+    margin: 0 calc(var(--padding-sm) * 0.5);
+    padding: calc(var(--padding-sm) * 1.2) var(--padding-md);
+    font-size: var(--font-medium);
+    background: var(--accent);
+    border-radius: var(--border-radius);
+    border: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.light_mode .settings a{
+    color: var(--border-highlight);
+}
+
+
+
+.settings a::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: var(--shadow-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0.3;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 50%;
+}
+
+.settings a:active::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+main {
+    margin-bottom: calc(var(--margin-md)*7.5);
+}
+
+main .aboutme {
+    padding: calc(var(--padding-md)*5) calc(var(--padding-md)*1.5) 0;
+}
+
+main section {
+    padding: calc(var(--padding-md)*3) calc(var(--padding-md)*1.5) 0;
+    width: 100%;
+    z-index: -1;
+}
+
+main section h2 {
+    width: 100%;
+    text-align: center;
+    font-size: calc(var(--font-large)*1.5);
+    font-weight: bold;
+    opacity: 0.3;
+    margin-bottom: var(--margin-sm);
+}
+.light_mode main section h2{
+    color: var(--highlight);
+    opacity: 0.5;
+    font-size: calc(var(--font-large)*1.7);
+}
+
+main section p {
+    text-align: justify;
+    text-align-last: center;
+    font-size: var(--small);
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 60vw;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, var(--bg-dark) 100%),
+            url(/Image/desktopPosterDarkMood.webp);
+        /* background-position: center ; */
+        background-size: cover;
+
+    }
+
+    .light_mode header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, var(--bg-dark) 100%),
+            url(/Image/desktopPosterLightMood.webp);
+        background-size: cover;
+    }
+
+    .settings a {
+        display: none;
+    }
+
+    .namebox .shadow {
+        transform: scale(4);
+        opacity: 0.04;
+    }
+
+    main {
+        margin-bottom: calc(var(--margin-md)*3);
+    }
+
+}
+
+@media (min-width: 1025px) {
+    .namebox img {
+        display: none;
+    }
+
+    header {
+        height: 36vw;
+        width: 68vw;
+        border-radius: calc(var(--border-radius)*4);
+        margin: 2.5rem auto 0;
+        padding: calc(var(--padding-md)*1.5);
+        background-position: center center;
+        box-shadow: 0 0 20px var(--shadow-color);
+        border: 1px solid var(--border-light);
+
+    }
+
+    .namebox .shadow {
+        bottom: 0vw;
+        font-size: var(--font-large);
+        transform: scale(3.3);
+        opacity: 0.05;
+    }
+
+
+    .MyInterest {
+
+        padding: calc(var(--padding-sm)*0.6) var(--padding-sm);
+        font-size: calc(var(--font-small)*0.65);
+    }
+
+    main section p {
+        padding: 0 calc(var(--padding-md)*3);
+    }
+
+    main .aboutme {
+        padding: calc(var(--padding-md)*3.5) calc(var(--padding-md)*1.5) 0;
+    }
+
+    main section {
+        padding: calc(var(--padding-md)*2.5) calc(var(--padding-md)*1.5) 0;
+
+    }
+
+    main {
+        margin-bottom: calc(var(--margin-md)*2);
+    }
+}
