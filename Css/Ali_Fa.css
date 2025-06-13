@@ -11,10 +11,17 @@
         url('/profile-overview/font/static/Vazirmatn-Bold.woff') format('woff');
     font-weight: bold;
 }
+
 body {
     font-family: 'Vazirmatn';
     direction: rtl;
 }
+
 .settings {
     direction: ltr;
+}
+
+.active {
+    padding: calc(var(--padding-sm)*0.7) calc(var(--padding-md) * 1.1) calc(var(--padding-sm)*0.1) ;
+    box-shadow: 0 2px 12px var(--shadow-color);
 }
