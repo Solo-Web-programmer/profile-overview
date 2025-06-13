@@ -1,7 +1,7 @@
 header {
     height: 120vw;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, var(--bg-dark) 90%),
-        url(/Image/mobilePosterDarkMood.webp);
+        url(/profile-overview/Image/mobilePosterDarkMood.webp);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@ header {
 }
 .light_mode header{
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, var(--bg-dark) 90%),
-        url(/Image/mobilePosterLightMood.webp);
+        url(/profile-overview/Image/mobilePosterLightMood.webp);
             background-size: cover;
 }
 
@@ -158,7 +158,7 @@ main section p {
     header {
         height: 60vw;
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, var(--bg-dark) 100%),
-            url(/Image/desktopPosterDarkMood.webp);
+            url(/profile-overview/Image/desktopPosterDarkMood.webp);
         /* background-position: center ; */
         background-size: cover;
 
@@ -166,7 +166,7 @@ main section p {
 
     .light_mode header {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, var(--bg-dark) 100%),
-            url(/Image/desktopPosterLightMood.webp);
+            url(/profile-overview/Image/desktopPosterLightMood.webp);
         background-size: cover;
     }
 
